@@ -12,6 +12,7 @@
         android:text="@string/login"/>
 
     <EditText
+        android:id="@+id/edittext_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/loginName"
@@ -23,14 +24,21 @@
         android:text="@string/password" />
 
     <EditText
+        android:id="@+id/edittext_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/flag"
-        android:contentDescription="flag"/>
+        android:text="Log in" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:contentDescription="@string/flag"
+        android:src="@drawable/flag" />
 
 </LinearLayout>

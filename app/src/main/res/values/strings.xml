@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="hello_message">Hello World!</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="loginName">login name</string>
+    <string name="radioButton">Radio Button</string>
+    <string name="checkBox">Checkbox</string>
+    <string name="swtich">What does this do?</string>
+    <string name="flag">flag</string>
+    <string name="imageButton">camera</string>
+    <string name="dialog_message">Finish the activity?</string>
+    <string name="dialog_title">Alert</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+
+
+
+</resources>
