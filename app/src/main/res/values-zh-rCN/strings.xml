@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab 5</string>
+    <string name="app_name">Lab 6</string>
     <string name="hello_message">你好呀</string>
     <string name="ButtonText">我是个按钮</string>
     <string name="login">登陆</string>
@@ -18,6 +18,8 @@
     <string name="startChat">开始聊天</string>
     <string name="sendButton">发送</string>
     <string name="Enter_here">输入</string>
+    <string name="WeatherForecast">天气预报</string>
+
 
 
 </resources>

@@ -20,11 +20,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ChatWindow extends Activity {
+    protected static final String ACTIVITY_NAME = "ChatWindow";
     ListView chatView;
     EditText chatEditText;
     Button sendButton;
     ArrayList<String> chatMessage;
-    protected static final String ACTIVITY_NAME = "ChatWindow";
+
     ContentValues cv;
     ChatAdapter messageAdapter;
     ChatDatabaseHelper helper;
@@ -58,11 +59,6 @@ public class ChatWindow extends Activity {
             Log.i(ACTIVITY_NAME, "SQL MESSAGE:" + c.getString(c.getColumnIndex(helper.KEY_MESSAGE)));
             c.moveToNext();
         }
-       /* for(int i=0; i<c.getCount(); i++){
-            chatMessage.add(c.getString(i));
-            Log.i(ACTIVITY_NAME, "SQL MESSAGE:" + c.getString(c.getColumnIndex(helper.KEY_MESSAGE)));
-            c.moveToNext();
-        } */
 
         Log.i(ACTIVITY_NAME, "Cursor's column count = " + c.getColumnCount());
         for(int i=0; i<c.getColumnCount(); i++){
