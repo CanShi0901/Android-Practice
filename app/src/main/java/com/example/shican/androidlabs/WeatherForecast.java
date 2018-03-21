@@ -32,7 +32,7 @@ import static org.xmlpull.v1.XmlPullParser.TEXT;
 
 public class WeatherForecast extends Activity {
     private ProgressBar progressBar;
-    private TextView minTemp, maxTemp, currentTemp;
+    private TextView minTemp, maxTemp, currentTemp, wind;
     private ImageView weatherImage;
     private Bitmap image;
     FileOutputStream outputStream;
@@ -48,6 +48,7 @@ public class WeatherForecast extends Activity {
         currentTemp = (TextView)findViewById(R.id.currentTemp);
         minTemp = (TextView)findViewById(R.id.minTemp);
         maxTemp = (TextView)findViewById(R.id.maxTemp);
+        wind = (TextView)findViewById(R.id.windSpeed);
         weatherImage = (ImageView)findViewById(R.id.weatherImage);
         WeatherQuery run = new WeatherQuery();
         run.execute();
@@ -78,7 +79,7 @@ public class WeatherForecast extends Activity {
                 parser.setInput(conn.getInputStream(), "utf-8");
                 int eventType = parser.getEventType();
                 String tagName = "";
-                String[] result = new String[4];
+                String[] result = new String[5];
                 while (eventType != XmlPullParser.END_DOCUMENT) {
                     parser.next();
                     tagName = parser.getName();
@@ -97,6 +98,8 @@ public class WeatherForecast extends Activity {
                         } else if (tagName.equalsIgnoreCase("weather")) {
                             result[3] = parser.getAttributeValue(null, "icon");
                             onProgressUpdate(100);
+                        } else if (tagName.equalsIgnoreCase("speed")){
+                            result[4]= parser.getAttributeValue(null, "value");
                         }
                     }
                 }
@@ -142,6 +145,7 @@ public class WeatherForecast extends Activity {
             currentTemp.setText("Current: "+result[0]+"°C");
             minTemp.setText("      Min: "+result[1]+"°C");
             maxTemp.setText("     Max: "+result[2]+"°C");
+            wind.setText("    Wind: "+result[4]+"km/h");
             weatherImage.setImageBitmap(image);
             progressBar.setVisibility(View.INVISIBLE);
         }
