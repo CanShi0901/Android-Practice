@@ -19,38 +19,33 @@
         android:id="@+id/currentTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/minTemp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginStart="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
         android:layout_toEndOf="@+id/weatherImage"
         android:text="TextView"
-        android:textSize="20sp"
         android:textColor="@android:color/white"
-        />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/minTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/maxTemp"
-        android:layout_alignStart="@+id/currentTemp"
-        android:layout_marginBottom="28dp"
+        android:layout_alignStart="@+id/maxTemp"
+        android:layout_below="@+id/maxTemp"
         android:text="TextView"
-        android:textSize="20sp"
         android:textColor="@android:color/white"
-        />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/maxTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/progressBar"
-        android:layout_alignStart="@+id/minTemp"
-        android:layout_marginBottom="21dp"
+        android:layout_alignStart="@+id/currentTemp"
+        android:layout_below="@+id/currentTemp"
+        android:layout_marginTop="18dp"
         android:text="TextView"
-        android:textSize="20sp"
         android:textColor="@android:color/white"
-        />
+        android:textSize="20sp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -61,4 +56,15 @@
         android:layout_below="@+id/weatherImage"
         android:layout_marginTop="15dp"
         />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/minTemp"
+        android:layout_below="@+id/minTemp"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
 </RelativeLayout>

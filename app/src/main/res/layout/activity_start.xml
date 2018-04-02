@@ -59,4 +59,12 @@
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="280dp" />
 
+    <Button
+        android:id="@+id/toolbarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/toolbarButton" />
+
 </RelativeLayout>

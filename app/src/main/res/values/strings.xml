@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab 6</string>
+    <string name="app_name">Lab 8</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a button</string>
     <string name="login">login</string>
@@ -18,6 +18,18 @@
     <string name="sendButton">send</string>
     <string name="Enter_here">Enter your message here</string>
     <string name="WeatherForecast">Weather Forecast</string>
+    <string name="deleteMessage">Delete This Message</string>
+    <string name="messageHere">Message: </string>
+    <string name="senderID">ID: </string>
+    <string name="toolbarButton">Test Toolbar</string>
+    <string name="dialogTitle">Do you want to go back?</string>
+    <string name="positiveButton">Yes</string>
+    <string name="negativeButton">Cancel</string>
+    <string name="newMessage">New Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
 
 
 </resources>

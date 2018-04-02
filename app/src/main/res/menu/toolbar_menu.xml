@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolOne"
+        android:title="one"
+        android:icon="@drawable/apple"
+        android:orderInCategory="101"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolTwo"
+        android:title="two"
+        android:icon="@drawable/kiwi"
+        android:orderInCategory="102"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolThree"
+        android:title="three"
+        android:icon="@drawable/watermelon"
+        android:orderInCategory="103"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never"
+        />
+
+</menu>
