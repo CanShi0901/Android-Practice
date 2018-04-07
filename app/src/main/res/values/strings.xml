@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Lab 8</string>
+    <string name="hello_message">Hello World!</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="loginName">login name</string>
+    <string name="radioButton">Radio Button</string>
+    <string name="checkBox">Checkbox</string>
+    <string name="swtich">What does this do?</string>
+    <string name="flag">flag</string>
+    <string name="imageButton">camera</string>
+    <string name="dialog_message">Finish the activity?</string>
+    <string name="dialog_title">Alert</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="startChat">Start Chat</string>
+    <string name="sendButton">send</string>
+    <string name="Enter_here">Enter your message here</string>
+    <string name="WeatherForecast">Weather Forecast</string>
+    <string name="deleteMessage">Delete This Message</string>
+    <string name="messageHere">Message: </string>
+    <string name="senderID">ID: </string>
+    <string name="toolbarButton">Test Toolbar</string>
+    <string name="dialogTitle">Do you want to go back?</string>
+    <string name="positiveButton">Yes</string>
+    <string name="negativeButton">Cancel</string>
+    <string name="newMessage">New Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+
+
+</resources>
